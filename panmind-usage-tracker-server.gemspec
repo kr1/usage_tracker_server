@@ -10,17 +10,27 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Christian Woerner", "Fabrizio Regini", "Marcello Barnaba"]
   s.date = %q{2012-02-23}
+  s.default_executable = %q{usage_tracker_server}
   s.description = %q{this software implements an EventMachine reactor which stores json-objects received via UDP in a database.}
   s.email = %q{info@panmind.com}
+  s.executables = ["usage_tracker_server"]
+  s.extra_rdoc_files = [
+    "README.md"
+  ]
   s.files = [
+    "Rakefile",
+    "VERSION",
+    "bin/usage_tracker_server",
     "config/usage_tracker_server.yml.sample",
+    "config/usage_tracker_server_upstart.conf",
     "lib/usage_tracker_server.rb",
     "lib/usage_tracker_server/adapter.rb",
     "lib/usage_tracker_server/adapters/couchdb.rb",
     "lib/usage_tracker_server/adapters/mongodb.rb",
     "lib/usage_tracker_server/log.rb",
     "lib/usage_tracker_server/reactor.rb",
-    "lib/usage_tracker_server/runner.rb"
+    "lib/usage_tracker_server/runner.rb",
+    "panmind-usage-tracker-server.gemspec"
   ]
   s.homepage = %q{http://github.com/Panmind/usage_tracker_server}
   s.require_paths = ["lib"]
