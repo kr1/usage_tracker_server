@@ -10,7 +10,6 @@ Does it work?
 =============
 
 Yes, we are using it in production.
-If you can help in complete the test suite, it is much appreciated :-).
 
 Deploying
 =========
