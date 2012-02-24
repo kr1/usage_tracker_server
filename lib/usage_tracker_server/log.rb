@@ -5,7 +5,7 @@ module UsageTrackerServer
 
     Levels = {
         :fatal => Logger::FATAL,
-        :erorr => Logger::ERROR,
+        :error => Logger::ERROR,
         :warn  => Logger::WARN,
         :info  => Logger::INFO,
         :debug => Logger::DEBUG

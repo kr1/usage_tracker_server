@@ -1,7 +1,7 @@
 # encoding: utf-8 
 #
 require 'rake'
-require 'rake/rdoctask'
+require 'rdoc/task'
 
 begin
   require 'jeweler'
@@ -20,7 +20,7 @@ begin
     gemspec.add_dependency('couchrest')
     gemspec.add_dependency('mongo')
     gemspec.add_dependency('bson')
-    gemspec.add_dependency('bson_ext')
+    gemspec.add_dependency('bson_ext', '=1.6.0')
   end
 rescue LoadError
   puts 'Jeweler not available. Install it with: gem install jeweler'

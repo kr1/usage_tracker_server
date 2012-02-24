@@ -4,20 +4,20 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{panmind-usage-tracker-server}
+  s.name = "panmind-usage-tracker-server"
   s.version = "1.1.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Christian Woerner", "Fabrizio Regini", "Marcello Barnaba"]
-  s.date = %q{2012-02-23}
-  s.default_executable = %q{usage_tracker_server}
-  s.description = %q{this software implements an EventMachine reactor which stores json-objects received via UDP in a database.}
-  s.email = %q{info@panmind.com}
+  s.date = "2012-02-24"
+  s.description = "this software implements an EventMachine reactor which stores json-objects received via UDP in a database."
+  s.email = "info@panmind.com"
   s.executables = ["usage_tracker_server"]
   s.extra_rdoc_files = [
     "README.md"
   ]
   s.files = [
+    "README.md",
     "Rakefile",
     "VERSION",
     "bin/usage_tracker_server",
@@ -32,10 +32,9 @@ Gem::Specification.new do |s|
     "lib/usage_tracker_server/runner.rb",
     "panmind-usage-tracker-server.gemspec"
   ]
-  s.homepage = %q{http://github.com/Panmind/usage_tracker_server}
+  s.homepage = "http://github.com/Panmind/usage_tracker_server"
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.6.2}
-  s.summary = %q{server component for usage-tracker-middleware (Rack)}
+  s.summary = "server component for usage-tracker-middleware (Rack)"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
@@ -45,20 +44,20 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<couchrest>, [">= 0"])
       s.add_runtime_dependency(%q<mongo>, [">= 0"])
       s.add_runtime_dependency(%q<bson>, [">= 0"])
-      s.add_runtime_dependency(%q<bson_ext>, [">= 0"])
+      s.add_runtime_dependency(%q<bson_ext>, ["= 1.6.0"])
     else
       s.add_dependency(%q<eventmachine>, [">= 0"])
       s.add_dependency(%q<couchrest>, [">= 0"])
       s.add_dependency(%q<mongo>, [">= 0"])
       s.add_dependency(%q<bson>, [">= 0"])
-      s.add_dependency(%q<bson_ext>, [">= 0"])
+      s.add_dependency(%q<bson_ext>, ["= 1.6.0"])
     end
   else
     s.add_dependency(%q<eventmachine>, [">= 0"])
     s.add_dependency(%q<couchrest>, [">= 0"])
     s.add_dependency(%q<mongo>, [">= 0"])
     s.add_dependency(%q<bson>, [">= 0"])
-    s.add_dependency(%q<bson_ext>, [">= 0"])
+    s.add_dependency(%q<bson_ext>, ["= 1.6.0"])
   end
 end
 
