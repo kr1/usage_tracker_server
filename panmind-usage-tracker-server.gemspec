@@ -4,8 +4,10 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
+  require 'yaml'
+  YAML::ENGINE.yamler = 'syck'
   s.name = "panmind-usage-tracker-server"
-  s.version = "1.1.4"
+  s.version = "1.1.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Christian Woerner", "Fabrizio Regini", "Marcello Barnaba"]
@@ -30,6 +32,7 @@ Gem::Specification.new do |s|
     "lib/usage_tracker_server/log.rb",
     "lib/usage_tracker_server/reactor.rb",
     "lib/usage_tracker_server/runner.rb",
+    "log/.placeholder",
     "panmind-usage-tracker-server.gemspec"
   ]
   s.homepage = "http://github.com/Panmind/usage_tracker_server"
