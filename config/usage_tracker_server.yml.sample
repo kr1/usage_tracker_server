@@ -5,7 +5,7 @@
 # database: "http://127.0.0.1:5984/usage_tracker"
 
 #  MongoDB connect settings
-adapter: 'mongodb' 
+adapter: 'mongodb'
 database:
   name: "usage_tracker"
   host: "127.0.0.1"
@@ -13,6 +13,6 @@ database:
   collection: "data"
 
 listen:  "127.0.0.1:5985"
-log_level: 'debug'
+log_level: 'warn'
 
 
